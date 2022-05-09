@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: #3b2621;
+  --medium: #daccba;
+  --light: #f0eae7;
+  --white: #fff; 
+}
+
+body {
+  font-family: 'Prompt', sans-serif;
+  line-height: 1.2;
+  background-color: var(--white);
+  color: var(--dark);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.body {
+  padding-top: 120px;
+}
+
+/* Navbar */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--light);
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#header-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: 1.5rem;
+  margin-right: auto;
+}
+
+#nav-bar {
+  align-self: center;
+  font-size: 1rem; 
+}
+
+#nav-bar ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  padding: 0 2rem;
+  justify-content: center;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+#nav-bar a:link, a:visited {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+#how-its-made-link {
+  border-right-style: solid;
+  border-right-color: var(--dark);
+  border-left-style: solid;
+  border-left-color: var(--dark);
+  border-width: 2px;
+}
+
+.section-header {
+  text-align: center;
+  font-size: 1.7rem;
+  margin: 2rem auto;
+}
+
+/* Coffee section */
+.prod-catalog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 3rem auto;
+ }
+
+.product {
+  width: 20rem;
+  text-align: center;
+  padding: 2rem 2rem;
+  border-style: solid;
+  border-color: var(--medium);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.product img {
+  margin-bottom: 1.2rem;
+}
+
+.prod-name{
+  font-size: 1.2rem;
+  margin: 1.2rem 0;
+  font-weight: 700;
+}
+
+.prod-description {
+  font-size: 0.8rem;
+  justify-self: center;
+  text-align: left;
+  margin: 2rem 0;
+}
+
+.prod-price {
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: 900;
+  margin: 2rem 0;
+}
+
+/* Order section */
+#order {
+  margin: 5rem auto;
+  text-align: center;
+}
+
+#form {
+  margin: 0 auto;
+}
+
+#email {
+  font-size: 1.0rem;
+  font-family: 'Prompt', sans-serif;
+  width: 25rem;
+  height: 2.5rem;
+  padding-left: 0.5rem;
+  border-style: solid;
+  border-width: 0.2rem;
+  border-radius: 5px;
+  border-color: var(--medium);
+}
+
+.btn {
+  margin: 2rem auto;
+  padding: 1rem 1.2rem;
+  font-family: 'Prompt',sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--dark);
+  background-color: var(--light);
+  border: none;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* How it's made */
+#how-its-made {
+  margin-top: -1rem;
+}
+
+#how-its-made iframe {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2)
+}
+
+/* About us section */
+#about p {
+  margin: 0 10rem;
+  margin-bottom: 5rem;
+  background-color: var(--light);
+  padding: 3.5rem 3.5rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+/* footer */
+.footer {
+  text-align: end;
+  padding: 1rem 1rem;
+  font-size: 0.8rem;
+  background-color: var(--light);
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin: 0.5rem 0;
+}
+
+.footer li {
+  padding: 0 0.5rem;
+}
+
+/* Media queries */
+@media (max-width: 900px) {
+  #nav-bar {
+    font-size: 0.9rem;
+  }
+
+  .prod-catalog {
+    display: flex;
+    flex-direction: column;
+   }
+
+   .product {
+     margin: 1rem auto;
+   }
+}
+
+@media (max-width: 460px) {
+  .body {
+    padding-top: 175px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    font-size: 0.8rem;
+    padding: 0 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #how-its-made-link {
+    border-width: 0.05rem;
+  }
+
+  #email {
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+    width: 20rem;
+  }
+
+  #video {
+    width: 20rem;
+    margin: 1rem 1rem;
+  }
+
+  #about p{
+    padding: 1rem 1rem;
+    margin: 1.2rem 1rem;
+  }
+
+}
+
+
