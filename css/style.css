@@ -72,6 +72,10 @@ ul {
   color: var(--dark);
 }
 
+#nav-bar a:hover {
+  text-decoration: underline;
+}
+
 #how-its-made-link {
   border-right-style: solid;
   border-right-color: var(--dark);
@@ -87,6 +91,10 @@ ul {
 }
 
 /* Coffee section */
+#coffee {
+  margin-top: 5rem;
+}
+
 .prod-catalog {
   display: flex;
   flex-direction: row;
@@ -186,7 +194,7 @@ ul {
   margin: 0 10rem;
   margin-bottom: 5rem;
   background-color: var(--light);
-  padding: 3.5rem 3.5rem;
+  padding: 2rem 2rem;
   border-radius: 10px;
   font-size: 0.9rem;
 }
@@ -211,7 +219,7 @@ ul {
 }
 
 /* Media queries */
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   #nav-bar {
     font-size: 0.9rem;
   }
@@ -221,9 +229,18 @@ ul {
     flex-direction: column;
    }
 
+   #how-its-made iframe {
+     max-width: 400px;
+   }
+
    .product {
      margin: 1rem auto;
    }
+
+   #about p{
+    padding: 1rem 1rem;
+    margin: 1.2rem 1rem;
+  }
 }
 
 @media (max-width: 460px) {
